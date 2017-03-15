@@ -15,11 +15,10 @@
   },
   "devDependencies": {
     "ava": "^0.18.2",
+    "got": "^6.7.1",
     "xo": "^0.17.1"
   },
-  "dependencies": {
-    "got": "^6.7.1"
-  },
+  "dependencies": {},
   "xo": {
     "space": true,
     "semicolon": false,
