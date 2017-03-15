@@ -4,15 +4,17 @@
 
 ## Install
 ```bash
-$ npm install has-uber
+$ npm install --save has-uber
 ```
 
 ## Usage
 ```js
 import hasUber from 'has-uber'
 
-hasUber('miami').then(res => res)
-// => true
+hasUber('miami')
+  .then(() => console.log('Uber is available in Miami'))
+  .catch(() => console.log('Uber is not available in Miami'))
+// => Uber is available in Miami
 ```
 
 ## API
@@ -26,6 +28,9 @@ Required
 
 Returns a promise (true / false)
 
+## Related
+
+- [has-uber-cli](https://github.com/bukinoshita/has-uber-cli) — :car: Check if Uber is available in your city with CLI
 
 ## License
 
