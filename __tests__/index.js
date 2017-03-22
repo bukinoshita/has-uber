@@ -10,7 +10,7 @@ test('should return available city', async t => {
 })
 
 test('should return not available city', async t => {
-  const res = await hasUber('opsaa').catch(err => err)
+  const res = await hasUber('opsaa').then(res => res)
 
   t.falsy(res)
 })
