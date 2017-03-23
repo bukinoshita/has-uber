@@ -12,8 +12,8 @@ $ npm install --save has-uber
 import hasUber from 'has-uber'
 
 hasUber('miami')
-  .then(hasUber => {
-    if (hasUber) {
+  .then(uber => {
+    if (uber) {
       console.log('Uber is available in Miami')  
     }
   })
