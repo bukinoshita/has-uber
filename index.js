@@ -1,17 +1,17 @@
 'use strict'
 
-const cities = require('./cities.json')
+const got = require('got')
 
 const hasUber = place => {
-  return new Promise(resolve => {
-    cities.filter(city => {
+  return got('https://www.uber.com/api/cities')
+    .then(cities => JSON.parse(cities.body).filter(city => {
       if (city.slug === place) {
-        resolve(true)
+        return true
       }
-    })
 
-    resolve(false)
-  })
+      return false
+    }))
+    .catch(err => err)
 }
 
 module.exports = hasUber

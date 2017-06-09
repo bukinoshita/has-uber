@@ -13,7 +13,7 @@ import hasUber from 'has-uber'
 
 hasUber('miami')
   .then(uber => {
-    if (uber) {
+    if (uber[0]) {
       console.log('Uber is available in Miami')  
     }
   })
@@ -29,7 +29,7 @@ hasUber('miami')
 Type: `string`<br/>
 Required
 
-Returns a promise (true / false)
+Returns a promise
 
 ## Related
 
