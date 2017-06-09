@@ -10,15 +10,13 @@
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "xo && ava",
-    "fetch": "node ./lib/fetch-cities"
+    "test": "xo && ava"
   },
   "devDependencies": {
     "ava": "^0.18.2",
     "got": "^6.7.1",
     "xo": "^0.17.1"
   },
-  "dependencies": {},
   "xo": {
     "space": true,
     "semicolon": false,
