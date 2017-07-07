@@ -2,10 +2,12 @@
 
 > :car: Check if Uber is available in your city
 
+
 ## Install
 ```bash
 $ npm install --save has-uber
 ```
+
 
 ## Usage
 ```js
@@ -20,6 +22,7 @@ hasUber('miami')
 // => Uber is available in Miami
 ```
 
+
 ## API
 
 ### hasUber(place)
@@ -31,10 +34,11 @@ Required
 
 Returns a promise
 
+
 ## Related
 
 - [has-uber-cli](https://github.com/bukinoshita/has-uber-cli) — :car: Check if Uber is available in your city with CLI
 
-## License
 
-[MIT](https://raw.githubusercontent.com/bukinoshita/has-uber/master/LICENSE) &copy; Bu Kinoshita
+## License
+MIT © [Bu Kinoshita](https://bukinoshita.io)
