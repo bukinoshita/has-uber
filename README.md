@@ -2,26 +2,20 @@
 
 > :car: Check if Uber is available in your city
 
-
 ## Install
-```bash
-$ npm install --save has-uber
-```
 
+```bash
+$ yarn add has-uber
+```
 
 ## Usage
+
 ```js
-import hasUber from 'has-uber'
+const hasUber = require('has-uber')
 
-hasUber('miami')
-  .then(uber => {
-    if (uber[0]) {
-      console.log('Uber is available in Miami')  
-    }
-  })
-// => Uber is available in Miami
+await hasUber('miami')
+// ~> true
 ```
-
 
 ## API
 
@@ -34,11 +28,10 @@ Required
 
 Returns a promise
 
-
 ## Related
 
 - [has-uber-cli](https://github.com/bukinoshita/has-uber-cli) — :car: Check if Uber is available in your city with CLI
 
-
 ## License
+
 MIT © [Bu Kinoshita](https://bukinoshita.io)

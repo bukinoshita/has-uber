@@ -3,10 +3,7 @@
   "version": "0.0.4",
   "description": "Check if Uber is available in your city",
   "main": "index.js",
-  "repository": {
-    "url": "git@github.com:bukinoshita/has-uber.git",
-    "type": "git"
-  },
+  "repository": "bukinoshita/has-uber",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -17,19 +14,35 @@
     "available"
   ],
   "scripts": {
-    "test": "xo && ava"
+    "test": "ava",
+    "lint": "xo"
+  },
+  "dependencies": {
+    "got": "^9.6.0"
   },
   "devDependencies": {
-    "ava": "^0.18.2",
-    "got": "^6.7.1",
-    "xo": "^0.17.1"
+    "ava": "^2.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2",
+    "xo": "^0.24.0"
   },
   "xo": {
-    "space": true,
-    "semicolon": false,
-    "esnext": true,
-    "rules": {
-      "array-callback-return": 0
+    "extends": [
+      "prettier"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --semi false --single-quote --write",
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
   }
 }
