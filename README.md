@@ -1,4 +1,4 @@
-# has-uber [![Build Status](https://travis-ci.org/bukinoshita/has-uber.svg?branch=master)](https://travis-ci.org/bukinoshita/has-uber)
+# has-uber [![Build Status](https://travis-ci.org/bukinoshita/has-uber.svg?branch=master)](https://travis-ci.org/bukinoshita/has-uber) [![codecov](https://codecov.io/gh/bukinoshita/has-uber/branch/master/graph/badge.svg)](https://codecov.io/gh/bukinoshita/has-uber)
 
 > :car: Check if Uber is available in your city
 
