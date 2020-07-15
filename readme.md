@@ -1,6 +1,6 @@
-# has-uber [![Build Status](https://travis-ci.org/bukinoshita/has-uber.svg?branch=master)](https://travis-ci.org/bukinoshita/has-uber) [![codecov](https://codecov.io/gh/bukinoshita/has-uber/branch/master/graph/badge.svg)](https://codecov.io/gh/bukinoshita/has-uber)
+# has-uber
 
-> :car: Check if Uber is available in your city
+> Check if Uber is available in your city
 
 ## Install
 
@@ -13,24 +13,35 @@ $ yarn add has-uber
 ```js
 const hasUber = require('has-uber')
 
-await hasUber('miami')
+await hasUber('brazil')
+// ~> true
+
+await hasUber('brazil', 'Sao Paulo')
 // ~> true
 ```
 
 ## API
 
-### hasUber(place)
+### hasUber(country, city)
 
-#### place
+#### country
 
 Type: `string`<br/>
 Required
 
 Returns a promise
 
+#### city
+
+Type: `string`<br/>
+Optional
+
+Returns a promise
+
 ## Related
 
-- [has-uber-cli](https://github.com/bukinoshita/has-uber-cli) — :car: Check if Uber is available in your city with CLI
+- [has-uber-cli](https://github.com/bukinoshita/has-uber-cli) — Check if Uber is available in your city with CLI
+- [uber-availability](https://github.com/bukinoshita/uber-availability) — The API for this module
 
 ## License
 

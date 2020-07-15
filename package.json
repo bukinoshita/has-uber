@@ -13,37 +13,26 @@
     "uber-cli",
     "available"
   ],
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "nyc ava",
-    "lint": "xo"
+    "build": "tsc",
+    "prepublish": "yarn build",
+    "test": "jest --config=jest.config.json"
   },
   "dependencies": {
-    "got": "^9.6.0"
+    "got": "11.5.0"
   },
   "devDependencies": {
-    "ava": "2.4.0",
-    "eslint-config-prettier": "6.4.0",
-    "husky": "3.0.8",
-    "lint-staged": "9.4.2",
-    "nyc": "14.1.1",
-    "prettier": "1.18.2",
-    "xo": "0.25.3"
-  },
-  "xo": {
-    "extends": [
-      "prettier"
-    ]
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --semi false --single-quote --write",
-      "yarn lint",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "@sindresorhus/tsconfig": "0.7.0",
+    "@types/jest": "26.0.4",
+    "@types/node": "13.13.14",
+    "jest": "26.1.0",
+    "ts-jest": "26.1.2",
+    "typescript": "3.9.6"
   }
 }
