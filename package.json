@@ -25,7 +25,7 @@
     "test": "jest --config=jest.config.json"
   },
   "dependencies": {
-    "got": "11.6.2"
+    "got": "11.7.0"
   },
   "devDependencies": {
     "@sindresorhus/tsconfig": "0.7.0",
